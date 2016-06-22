@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  */
 
 public class Common {
-	public static WebDriver driver;
+	public WebDriver driver;
 	
 	//init driver
 	public Common(WebDriver dr){
@@ -20,13 +20,13 @@ public class Common {
 	}
 
 	//Open URL
-	public static void openUrl(String baseUrl) throws InterruptedException{
+	public void openUrl(String baseUrl) throws InterruptedException{
 		driver.get(baseUrl);
 		driver.manage().window().maximize();
 	}
 
 	//close URL
-	public static void closeUrl(){
+	public void closeUrl(){
 		driver.close();
 	}
 }
