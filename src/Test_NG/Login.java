@@ -34,5 +34,4 @@ public class Login {
 		driver.findElement(loginBtn).click(); //click button Login
 		Thread.sleep(5000);
 	}
-
 }
